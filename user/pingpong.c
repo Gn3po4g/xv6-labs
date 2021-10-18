@@ -3,6 +3,6 @@
 #include "user/user.h"
 
 int main(int argc, char *argv[]) {
-  printf("asccccccccdfd");
+  int parentpipe[2], childpipe[2];
   exit(0);
 }
