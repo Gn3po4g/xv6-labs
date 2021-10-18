@@ -3,6 +3,6 @@
 #include "user/user.h"
 
 int main(int argc, char *argv[]) {
-  printf("asdfadfsadfd");
+  printf("asdadfd");
   exit(0);
 }
