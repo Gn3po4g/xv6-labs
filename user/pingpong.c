@@ -4,5 +4,6 @@
 
 int main(int argc, char *argv[]) {
   int parentpipe[2], childpipe[2];
+  int i;
   exit(0);
 }
