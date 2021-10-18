@@ -2,4 +2,7 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
-int main(int argc, char *argv[]) { printf("asdfasd"); }
+int main(int argc, char *argv[]) {
+  printf("asdfasdfsadfsadfd");
+  exit(0);
+}
