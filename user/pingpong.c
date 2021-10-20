@@ -37,6 +37,7 @@ int main(int argc, char *argv[]) {
     close(parentpipe[0]);
     printf("%d: received pong\n", getpid());
     wait(0);
-    exit(0);
+
+        exit(0);
   }
 }

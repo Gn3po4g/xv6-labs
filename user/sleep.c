@@ -13,5 +13,6 @@ int main(int argc, char *argv[]) {
     sleep(atoi(argv[1]));
     printf("(nothing happens for a little while)\n");
   }
-  exit(0);
+
+    exit(0);
 }
