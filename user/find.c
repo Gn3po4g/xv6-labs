@@ -3,6 +3,8 @@
 #include "user/user.h"
 #include "kernel/fs.h"
 
+int found = 0;
+
 void find(char *path, char *filename) {
   char buf[512], *p;
   int fd;
@@ -46,8 +48,10 @@ void find(char *path, char *filename) {
     }
     if (st.type == T_DIR)
       find(buf, filename);
-    else if (st.type == T_FILE && !strcmp(de.name, filename))
+    else if (st.type == T_FILE && !strcmp(de.name, filename)) {
       printf("%s\n", buf);
+      found = 1;
+    }
   }
 }
 
@@ -57,5 +61,7 @@ int main(int argc, char *argv[]) {
     exit(1);
   } else
     find(argv[1], argv[2]);
+  if (!found)
+    printf("cannot find %s\n", argv[2]);
   exit(0);
 }
