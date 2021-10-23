@@ -99,5 +99,5 @@ sys_uptime(void)
 uint64
 sys_trace(void)
 {
-
+  
 }
